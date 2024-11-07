@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+  z-index: 20;
+  background-color: var(--hover-card);
+  border-radius: inherit;
+  padding: 1px;
+  transition: opacity 500ms ease-in;
+}
+
+.card::before,
+.card::after {
+  pointer-events: none;
+  content: "";
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card::before {
+  z-index: 30;
+  opacity: 0.5;
+  transition: opacity 500ms ease-in;
+  background: radial-gradient(
+    50rem circle at var(--mouse-x) var(--mouse-y),
+    var(--hover-card-before),
+    transparent 40%
+  );
+}
+
+.card::after {
+  z-index: 10;
+  opacity: 0.5;
+  transition: opacity 500ms ease-in;
+  background: radial-gradient(
+    40rem circle at var(--mouse-x) var(--mouse-y),
+    var(--hover-card-after),
+    transparent 40%
+  );
+}
