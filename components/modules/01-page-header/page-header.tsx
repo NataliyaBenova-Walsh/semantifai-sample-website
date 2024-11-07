@@ -41,7 +41,7 @@ export default function PageHeader() {
                 <HeaderNavLink href="/#use-cases">Use cases</HeaderNavLink>
               </HeaderNavItem>
               <HeaderNavItem>
-                <HeaderNavLink href="/#team">Team</HeaderNavLink>
+                <HeaderNavLink href="/about">About us</HeaderNavLink>
               </HeaderNavItem>
               <HeaderNavItem>
                 <HeaderNavLink href="/blog">Blog</HeaderNavLink>
