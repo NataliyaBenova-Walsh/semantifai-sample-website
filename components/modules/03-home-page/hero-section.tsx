@@ -7,29 +7,24 @@ import {
 } from "@/components/common/02-page-ui/section";
 
 
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Button } from "@/components/common/03-element-ui/buttons/button";
 
 
 
 export default function HeroSection() {
   return (
     <Section className="relative bg-network4-bg bg-center bg-cover">
-      <div className="absolute inset-0 bg-black opacity-75"></div>
+      <div className="absolute inset-0 bg-black opacity-70"></div>
       
       <SectionTitleWrap variant="hero" className="relative z-10" >
       
-      <H1Heading>
-        Unlock seamless access to your knowledge base with DocuChat.
+      <H1Heading className="bg-gradient-to-r from-emerald-400 via-teal-400 to-zinc-400 text-transparent bg-clip-text">
+      Turn your data into meaningful and actionable insights.
         </H1Heading>
         <Paragraph className="max-w-xl">
-        Simply ask, and get instant answers from your own documents. Say goodbye to tedious searches and hello to effortless information retrieval
+        Let AI handle the heavy lifting for your business—safely, transparently, and compliantly. 
         </Paragraph>
-        <Button className="mt-5">Ask for more information</Button>
+        <Button variant='gooeyLeftTeal' className="mt-5">Ask for more information</Button>
        
         
       </SectionTitleWrap>

@@ -1,32 +1,64 @@
 import { H2Heading } from "@/components/common/01-typography/h2-heading";
-import { Card } from "@/components/common/03-element-ui/cards/card";
+import { H3Heading } from "@/components/common/01-typography/h3-heading";
 import {
-    Section,
+    Section, SectionTitleWrap
   } from "@/components/common/02-page-ui/section";
  
-  import Image from 'next/image';
+  import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
   import { Paragraph } from "@/components/common/01-typography/paragraph";
-  import { Check } from "lucide-react";
+
+  const data = [
+    {
+        title: 'Data Protection First',
+        desc: 'You are empowered with tools that offer complete transparency and control over data exposure to AI, as well as tracking its usage. Our robust security measures ensure that your sensitive information remains confidential and secure at all times.',
+    },
+    {
+        title:'Tailored Approach',
+        desc: 'We take a personalised approach to every project, working closely with you to identify your specific needs. Our dedicated team collaborates with you to craft customised AI strategies that guarantee optimal results and drive meaningful impact.',
+    },
+    {
+        title:'Battle-Proven Products',
+    desc: 'Our AI solutions are tested in real-world scenarios, showcasing proven success across diverse industries. With a robust track record of implementations for both institutions and businesses, our products consistently achieve impactful results.',
+    }
+  ]
 export default function ProductSection() {
 
     return (
-        <Section className="bg-network1-bg">
-            <H2Heading>Why DocuChat?</H2Heading>
-            <Card >
-                <div className="flex gap-2">
-                    <div className="w-1/2 flex flex-col gap-8 justify-center">
-                        <Paragraph><span className="text-indigo-500 text-xl font-bold">Instant Access to Information:</span> Retrieve information quickly by conversing with your documents using natural language.</Paragraph>
-                        <Paragraph><span className="text-indigo-500 text-xl font-bold">Enhanced Productivity:</span> Eliminate time spent manually searching through documents.
-                        </Paragraph>
-                        <Paragraph><span className="text-indigo-500 text-xl font-bold">Secure and Customizable:</span> Choose between public document integration on your website or a private chatbot for internal documents.
-                        </Paragraph>
+        <>
+        <Section className="bg-robotHand-bg bg-center bg-cover relative">
+            <div className="absolute inset-0 bg-gray-900 opacity-75"></div>
+            <SectionTitleWrap className="realtive z-10">
+            <H2Heading>Why Semantif.ai?</H2Heading>
+            <div className="text-start flex flex-col gap-10">
+                {data.map((item, index)=> (
+                    <div key={index} className="border-l-2 border-teal-300 pl-5">
+                        <H3Heading>{item.title}</H3Heading>
+                        <Paragraph>{item.desc}</Paragraph>
                     </div>
-                    <div className="w-1/2 rounded-md">
-                    
-                    </div>
-                </div>
-            </Card>
+                ))}
+            </div>
+            </SectionTitleWrap>
         </Section>
 
+<Section className="bg-robotHand-bg bg-center bg-cover relative">
+<div className="absolute inset-0 bg-gray-900 opacity-75"></div>
+<SectionTitleWrap className="realtive z-10">
+<H2Heading className="my-10">Why Semantif.ai?</H2Heading>
+<div className="text-start flex  gap-5 ">
+    {data.map((item, index)=> (
+        <Card key={index} className="border-2 border-teal-300 pl-5 bg-zinc-900 opacity-80 w-1/3">
+            <CardHeader>
+                <H3Heading className="text-teal-200 z-10">{item.title}</H3Heading>
+            </CardHeader>
+            <CardContent>
+                <Paragraph>{item.desc}</Paragraph>
+            </CardContent>
+            
+        </Card>
+    ))}
+</div>
+</SectionTitleWrap>
+</Section>
+</>
     )
 }

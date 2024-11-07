@@ -66,8 +66,11 @@ const config: Config = {
 			"shine": "shine 8s ease-in-out infinite",
 		  },
 		  backgroundImage: {
-			'network4-bg': "url('/images/network4.jpg')"  // Adjust the path as necessary
-		  }
+			'network4-bg': "url('/images/network4.jpg')",
+			'circle-bg': "url('/images/circle1.webp')",
+			'robotHand-bg': "url('/images/robotHandGreen.webp')",
+		  },
+		 
   	}
   },
   plugins: [require("tailwindcss-animate")],

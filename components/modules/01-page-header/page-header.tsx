@@ -14,7 +14,9 @@ import {
 } from '@/components/modules/01-page-header/components/header';
 import { Logo } from "@/components/common/03-element-ui/logos/logo"; 
 
-import { Button } from "@/components/ui/button";
+
+import { Button } from "@/components/common/03-element-ui/buttons/button";
+
 
 export default function PageHeader() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
@@ -48,7 +50,7 @@ export default function PageHeader() {
           </HeaderNavListWrap>
           <div className="relative z-20 flex flex-row gap-2.5 items-center">
           
-            <Button variant="outline" asChild>
+            <Button variant="gooeyLeft" asChild>
               <Link href="/" target="_blank" >
                 Get in Touch
               </Link>

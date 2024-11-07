@@ -9,7 +9,7 @@ function Logo({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
     <Link
       href="/"
       className={cn(
-        "mr-auto relative z-20 flex flex-row items-center gap-2.5 text-primary-foreground",
+        "mr-auto relative z-20 flex flex-row items-center gap-2.5 ",
         className
       )}
       aria-label="Home"
