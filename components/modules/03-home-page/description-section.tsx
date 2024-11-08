@@ -4,9 +4,9 @@ import {
     Section, SectionTitleWrap
   } from "@/components/common/02-page-ui/section";
  
-  import Image from 'next/image';
+ 
   import { Paragraph } from "@/components/common/01-typography/paragraph";
-  import { Check } from "lucide-react";
+ 
 export default function DescriptionSection() {
 
     return (

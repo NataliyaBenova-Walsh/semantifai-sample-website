@@ -5,12 +5,10 @@ import nataliyaBW from '../../../app/assets/nataliyaBW.webp';
 import yankoBW from '../../../app/assets/yankoBW.webp';
 import beardManBW from '../../../app/assets/beardManBW.jpg';
 import Image from 'next/image';
-import {
-    Section, SectionTitleWrap
-  } from "@/components/common/02-page-ui/section";
-  import { H2Heading } from "@/components/common/01-typography/h2-heading";
+import { Section, SectionTitleWrap} from "@/components/common/02-page-ui/section";
+  import { H3Heading } from "@/components/common/01-typography/h3-heading";
   import { Paragraph } from "@/components/common/01-typography/paragraph";
-
+import Link from 'next/link';
   import { useState } from 'react';
   import {
     Dialog,
@@ -21,8 +19,10 @@ import {
     DialogTitle,
     DialogTrigger,
   } from "@/components/ui/dialog";
-
+import { Linkedin } from 'lucide-react';
   import { Button } from "@/components/common/03-element-ui/buttons/button";
+import { H2Heading } from '@/components/common/01-typography/h2-heading';
+import { H4Heading } from '@/components/common/01-typography/h4-heading';
 
 export default function TeamSection () {
 
@@ -84,20 +84,25 @@ export default function TeamSection () {
     return (
         <Section className="relative  p-16 bg-gradient-to-bl from-zinc-950 via-zinc-800 to-zinc-950">
         <div className="relative w-full before:absolute before:-bottom-16 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-red-300 before:to-transparent">
-        <h2 className="text-3xl my-8 font-bold text-center">Our team</h2>
+        <H2Heading className='text-center'>Our team</H2Heading>
        
         <div className='flex gap-10 justify-center flex-wrap'>
             {teamMembers.map((member, index) => (
                 <div key={index} 
-                    className='flex  gap-4 justify-center '
+                    className='flex flex-col justify-center '
                     onClick={() => { setSelectedMember(member); setDialogOpen(true); }} >
 
-                    <Image src={member.image} alt='Lady image' className='w-48 h-60  border-2 border-teal-300'/>
-                    <div className='w-60 flex flex-col gap-5 justify-center items-start border-2 border-teal-600'>
-                    <h3 className='text-lg text-center font-bold'>{member.name}</h3>
-                    <h4 className='text-md text-center'>{member.title}</h4>
+                    <Image src={member.image} alt='Lady image' className='w-60 h-72  '/>
+                    <div className='flex gap-1'>
+                        
+                            <Link href='sth'><Linkedin /></Link>
+                        
+                        <div className='flex-1 bg-transparent hover:bg-teal-950 p-2'>
+                            <H3Heading size='sm'>{member.name} </H3Heading>
+                            <H3Heading size='sm'>{member.lastName} </H3Heading>
+                            <Paragraph >{member.title}</Paragraph>
+                        </div>
                     </div>
-                    
                 </div>
             ))}
             
