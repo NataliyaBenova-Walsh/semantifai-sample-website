@@ -10,7 +10,7 @@ const Header = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     <header
       ref={ref}
       className={cn(
-        "fixed top-0 z-40 px-5 py-5 w-full lg:px-10 backdrop-blur-lg bg-gradient-to-br from-zinc-950 via-zinc-800 to-zinc-950",
+        "fixed top-0 z-40 px-5 py-5 w-full lg:px-10 backdrop-blur-lg ",
         className
       )}
       {...props}
@@ -41,7 +41,7 @@ const HeaderNavContainer = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "fixed left-0 inset-y-0 ml-auto w-3/4 max-w-96 h-full px-5 py-20border-r transition-transform ease-in-out duration-300 lg:static lg:flex lg:items-center lg:justify-between lg:w-auto lg:max-w-none lg:px-0 lg:py-0 lg:bg-transparent lg:border-r-0",
+      "fixed left-0 inset-y-0 ml-auto w-3/4 max-w-96 h-full px-5 py-20 border-r transition-transform ease-in-out duration-300 lg:static lg:flex lg:items-center lg:justify-between lg:w-auto lg:max-w-none lg:px-0 lg:py-0 lg:bg-transparent lg:border-r-0",
       {
         "transform -translate-x-full lg:transform-none": !isOpen,
         "transform translate-x-0": isOpen,

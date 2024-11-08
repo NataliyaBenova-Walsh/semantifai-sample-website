@@ -47,7 +47,7 @@ export default function QuotesSection() {
         <Section className="my-20">
           <div className="flex gap-20 flex-wrap justify-center">
             {dataQuotes.map((quote, index)=> (
-              <div key={index} className={cn('w-96 p-5', quote.class)}>
+              <div key={index} className={cn('w-96 p-5 ', quote.class)}>
                 <H3Heading size='sm' className=" italic">"{quote.text}"</H3Heading>
                 <Paragraph size='sm' className="my-5 text-teal-100">{quote.author}</Paragraph>
               </div>
@@ -61,3 +61,4 @@ export default function QuotesSection() {
     </Section>
     )
 }
+
