@@ -6,7 +6,7 @@ import PageFooter from "@/components/modules/02-page-footer/page-footer";
 import { Main } from "@/components/common/02-page-ui/main";
 import { ThemeProvider } from "@/components/theme-provider";
 
-/*
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -16,7 +16,7 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
-});*/
+});
 
 export const metadata: Metadata = {
   title: "Semantifai",
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        //className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
          <ThemeProvider
             attribute="class"

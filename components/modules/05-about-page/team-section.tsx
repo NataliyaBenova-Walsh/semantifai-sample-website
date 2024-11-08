@@ -22,7 +22,7 @@ import Link from 'next/link';
 import { Linkedin } from 'lucide-react';
   import { Button } from "@/components/common/03-element-ui/buttons/button";
 import { H2Heading } from '@/components/common/01-typography/h2-heading';
-import { H4Heading } from '@/components/common/01-typography/h4-heading';
+
 
 export default function TeamSection () {
 
@@ -33,7 +33,7 @@ export default function TeamSection () {
             title: 'Business Development',
             image: beardManBW,
             desc: 'Been there and done that, a digital entrepreneur with multiple awards, Techstars alumnus, TEDx speaker, projects for UniCredit, Dutch government, European Commission, co-founder and member of the first board of the Bulgarian startup association (BESCO).',
-            className: 'justify-end'
+          
         },
         {
             name: 'Ivan',
@@ -41,7 +41,7 @@ export default function TeamSection () {
             title: 'AI Developer',
             image: beardManBW,
             desc: 'Lorem ipsum dolor sit',
-            className: 'justify-start pt-4'
+            
         },
         {
             name: 'Nataliya',
@@ -49,7 +49,7 @@ export default function TeamSection () {
             title: 'Frontend Developer ',
             image: nataliyaBW,
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            className: 'justify-start'
+           
         },
         {
             name: 'Petar',
@@ -57,7 +57,7 @@ export default function TeamSection () {
             title: 'Backend Developer',
             image: beardManBW,
             desc: 'Lorem ipsum dolor sit',
-             className: 'justify-start'
+            
         },
         {
             name: 'Trifon',
@@ -65,7 +65,7 @@ export default function TeamSection () {
             title: 'Co-founder & Tech Lead',
             image: trifonBW,
             desc: "Senior Java engineer, former SAP Labs and VMware, co-founder of open-source projects and initiatives. 50+ implemented projects in production with high scalability features and integrations with eBay, Amazon, Shopware, Drupal Commerce, and Rakuten Viber.",
-             className: 'justify-start pt-4'
+             
         },
         {
             name: 'Yanko',
@@ -73,7 +73,7 @@ export default function TeamSection () {
             title: 'Fullstack Developer',
             image: yankoBW,
             desc: 'Full Stack developer Python/React.JS and Naval Architect/Ship Hull design engineer - (Master`s degree). Passionate about technology with an neverending thirst for knowledge. A blend of developer and engineer, offering a unique perspective from both worlds.',
-            className: 'justify-end'
+          
         },
 
     ]
@@ -82,9 +82,9 @@ export default function TeamSection () {
     const [dialogOpen, setDialogOpen] = useState(false);
 
     return (
-        <Section className="relative  p-16 bg-gradient-to-bl from-zinc-950 via-zinc-800 to-zinc-950">
-        <div className="relative w-full before:absolute before:-bottom-16 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-red-300 before:to-transparent">
-        <H2Heading className='text-center'>Our team</H2Heading>
+        <Section className="relative  p-16 ">
+        <div className="relative w-full ">
+        <H2Heading className='text-center my-10'>Our team</H2Heading>
        
         <div className='flex gap-10 justify-center flex-wrap'>
             {teamMembers.map((member, index) => (
@@ -97,7 +97,7 @@ export default function TeamSection () {
                         
                             <Link href='sth'><Linkedin /></Link>
                         
-                        <div className='flex-1 bg-transparent hover:bg-teal-950 p-2'>
+                        <div className='flex-1 p-2 bg-transparent hover:bg-gradient-to-bl hover:from-zinc-950 hover:via-teal-800 hover:to-zinc-950'>
                             <H3Heading size='sm'>{member.name} </H3Heading>
                             <H3Heading size='sm'>{member.lastName} </H3Heading>
                             <Paragraph >{member.title}</Paragraph>

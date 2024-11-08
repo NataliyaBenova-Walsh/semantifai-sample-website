@@ -24,7 +24,7 @@ export default function HeroSection() {
         <Paragraph className="max-w-xl">
         Let AI handle the heavy lifting for your business—safely, transparently, and compliantly. 
         </Paragraph>
-        <Button variant='gooeyLeftTeal' className="mt-5">Ask for more information</Button>
+        <Button size='lg' variant='gooeyLeftTealTransparent' className="mt-5">Ask for more information</Button>
        
         
       </SectionTitleWrap>

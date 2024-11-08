@@ -35,22 +35,22 @@ export default function PageHeader() {
             <HeaderNavList className="">
             
               <HeaderNavItem>
-                <HeaderNavLink href="/#product" >Products</HeaderNavLink>
+                <HeaderNavLink href="/products" >Products</HeaderNavLink>
               </HeaderNavItem>
               <HeaderNavItem>
-                <HeaderNavLink href="/#use-cases">Use cases</HeaderNavLink>
+                <HeaderNavLink href="/use-cases">Use cases</HeaderNavLink>
               </HeaderNavItem>
               <HeaderNavItem>
                 <HeaderNavLink href="/about">About us</HeaderNavLink>
               </HeaderNavItem>
               <HeaderNavItem>
-                <HeaderNavLink href="/blog">Blog</HeaderNavLink>
+                <HeaderNavLink href="/contacs">Contacts</HeaderNavLink>
               </HeaderNavItem>
             </HeaderNavList>
           </HeaderNavListWrap>
           <div className="relative z-20 flex flex-row gap-2.5 items-center">
           
-            <Button variant="gooeyLeft" asChild>
+            <Button variant="gooeyLeftTransparent" asChild>
               <Link href="/" target="_blank" >
                 Get in Touch
               </Link>

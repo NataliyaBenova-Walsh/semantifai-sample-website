@@ -1,13 +1,7 @@
-import TeamSection from "@/components/modules/05-about-page/team-section";
-
-
+import AboutPage from "@/components/modules/05-about-page/about-page"
 export default function About () {
 
     return (
-        <div className="mt-32">
-            <TeamSection />
-      
-           
-        </div>
+        <AboutPage />
     )
 }
