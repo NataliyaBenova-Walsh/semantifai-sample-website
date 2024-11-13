@@ -7,7 +7,7 @@ export default function HomePage() {
     return (
      <div>
       <HeroSection />
-      <DescriptionSection />
+      
       <QuotesSection />
       <ProductSection />
      </div>

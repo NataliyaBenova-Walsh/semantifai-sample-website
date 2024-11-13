@@ -13,7 +13,7 @@ export default function CompanySection() {
         <Section className="">
             
             <SectionTitleWrap >
-            <H2Heading className="my-10">Abous us</H2Heading>
+            <H2Heading className="my-10">About us</H2Heading>
             <Paragraph>
             We understand that harnessing AI to optimise your processes can feel overwhelming. While the potential for value creation is immense, navigating the various implications is essential. At Semantif.AI, we simplify this journey. Our AI solutions transform complexity into clarity, empowering you to make informed decisions with confidence and peace of mind.
             </Paragraph>

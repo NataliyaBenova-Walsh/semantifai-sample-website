@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const sectionVariants = cva("relative", {
   variants: {
     layout: {
-      default: "",
+      default: "w-full before:absolute before:-bottom-5 before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-teal-600 before:to-transparent",
       centered: "grid place-items-center",
       canvas: "grid grid-cols-12",
     },
@@ -52,7 +52,7 @@ const sectionTitleWrapVariants = cva(
   {
     variants: {
       variant: {
-        default: "",
+        default: "p-10",
         hero: "mt-32 p-10",
       },
       layout: {

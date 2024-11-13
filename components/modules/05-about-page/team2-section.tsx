@@ -48,7 +48,7 @@ export default function TeamSection2 () {
             lastName: 'Benova-Walsh',
             title: 'Frontend Developer ',
             image: nataliyaBW,
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            desc: "Frontend Developer skilled in JavaScript, React, and Next.js, with a focus on creating responsive, high-performance applications that enhance user engagement. Nataliya’s diverse experience includes collaborating on scalable web solutions and optimizing user experiences across desktop and mobile environments.",
            
         },
         {
@@ -82,7 +82,7 @@ export default function TeamSection2 () {
     const [dialogOpen, setDialogOpen] = useState(false);
 
     return (
-      <Section className="relative p-16 ">
+      <Section className="relative p-20 bg-gradient-to-br from-zinc-950 from-30% via-teal-950 via-50% to-zinc-950 to-70%">
       <div className="relative w-full ">
         <H2Heading className='text-center my-10'>Our team</H2Heading>
 
@@ -95,7 +95,7 @@ export default function TeamSection2 () {
 
               <div className='flex gap-1'>
                 <Link href='sth'><Linkedin /></Link>
-                <div className='flex-1 bg-teal-950 p-2'>
+                <div className='flex-1 bg-zinc-900 p-2'>
                   <H3Heading size='sm'>{member.name} </H3Heading>
                   <H3Heading size='sm'>{member.lastName} </H3Heading>
                   <Paragraph >{member.title}</Paragraph>

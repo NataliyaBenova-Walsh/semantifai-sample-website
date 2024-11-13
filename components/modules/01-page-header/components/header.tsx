@@ -75,7 +75,7 @@ const HeaderNavList = React.forwardRef<
   <ul
     ref={ref}
     className={cn(
-      "mb-10 mx-auto flex flex-col justify-center lg:mb-0 lg:flex-row lg:px-2.5 lg:border lg:rounded-full",
+      "mb-10 mx-auto flex flex-col justify-center lg:mb-0 lg:flex-row lg:px-2.5 lg:border lg:rounded-full lg:border-primary",
       className
     )}
     {...props}
