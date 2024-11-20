@@ -12,19 +12,19 @@ const dataQuotes = [
     text: 'AI will be the most transformative technology of the 21st century. It will affect every industry and aspect of our lives.',
     author:'Jensen Huang',
     jobTitle: 'CEO at NVIDIA',
-    class: 'border-2 border-teal-300 rounded-tr-3xl rounded-bl-3xl bg-transparent mb-36'
+    class: 'border-2 border-teal-300 rounded-tr-3xl rounded-bl-3xl bg-transparent lg:mb-36'
   },
   {
     text: 'AI will be part of every industry, enhancing our abilities in ways we cannot even imagine yet.',
     author:'Jeff Bezos',
     jobTitle: 'Executive Chairman at Amazon',
-    class: 'border-2 border-teal-300 rounded-tr-3xl rounded-bl-3xl bg-transparent my-auto'
+    class: 'border-2 border-teal-300 rounded-tr-3xl rounded-bl-3xl bg-transparent lg:my-auto'
   },
   {
     text: 'AI is not a substitute for human intelligence; it is a tool to amplify human creativity and ingeniuty.',
     author:'Fei-Fei Li',
     jobTitle: 'Professor at the Computer Science Department at Stanford University',
-    class: 'border-2 border-teal-300 rounded-tr-3xl rounded-bl-3xl bg-transparent mt-36'
+    class: 'border-2 border-teal-300 rounded-tr-3xl rounded-bl-3xl bg-transparent lg:mt-36'
   },
   
   /*{

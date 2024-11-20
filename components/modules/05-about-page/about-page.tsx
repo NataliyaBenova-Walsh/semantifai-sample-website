@@ -9,7 +9,7 @@ export default function AboutPage() {
     return (
         <div className="bg-gradient-to-bl from-zinc-950 via-zinc-800 to-zinc-950">
             <CompanySection />
-            <TeamSection />
+           
       
            <TeamSection2 />
       

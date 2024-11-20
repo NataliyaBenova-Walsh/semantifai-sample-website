@@ -8,6 +8,7 @@ const paragraphVariants = cva("!font-open-sans", {
     size: {
       default: "text-base",
       sm: "text-sm",
+      md: "text-md",
       lg: "text-lg",
     },
     variant: {

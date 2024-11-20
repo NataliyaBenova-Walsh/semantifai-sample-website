@@ -26,14 +26,14 @@ const data = [
 export default function ProductsSection() {
     return (
         <Section className="bg-gradient-to-bl from-zinc-950 via-zinc-800 to-zinc-950 ">
-            <SectionTitleWrap variant='hero'>
-            <H1Heading className="text-teal-300 text-center">Our products</H1Heading>
-            <div className="flex flex-col gap-5 my-10 w-2/3 mx-auto">
+            <SectionTitleWrap >
+            <H1Heading className=" text-center">Our products</H1Heading>
+            <div className="flex flex-col gap-5 my-10 w-full md:w-2/3 mx-auto">
                 {data.map((item, index)=> (
-                    <Card key={index} className="bg-transparent m-5 p-5 border-2 border-teal-700 ">
+                    <Card key={index} className="bg-transparent lg:m-5 lg:p-5 border-2 border-teal-700 ">
                         <CardHeader>
                             <CardTitle>
-                            <H1Heading>{item.product}</H1Heading>
+                            <H1Heading className="bg-gradient-to-r from-emerald-400 via-teal-400 to-zinc-400 text-transparent bg-clip-text">{item.product}</H1Heading>
                             </CardTitle>
                             <CardDescription>
                             <H2Heading className="pb-5">{item.title}</H2Heading>
@@ -43,7 +43,7 @@ export default function ProductsSection() {
                             <Paragraph>{item.desc}</Paragraph>
                             </CardContent>
                             <CardFooter>
-                            <Button variant="gooeyLeftTeal" className="mx-auto" >Learn more</Button>
+                            <Button variant="gooeyLeftTeal" size='lg' className="mx-auto" >Learn more</Button>
                             </CardFooter>
                         
                         

@@ -9,7 +9,7 @@ function Logo({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
     <Link
       href="/"
       className={cn(
-        "mr-auto relative z-20 flex flex-row items-center gap-2.5 ",
+        "mr-auto relative z-20 flex flex-row items-center gap-2.5 text-lg ",
         className
       )}
       aria-label="Home"
@@ -18,8 +18,8 @@ function Logo({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
       <Image className="rounded-full"
         src={LogoSemantifai}
         alt="Logo Semantifai"
-        width={60}
-        height={60} />
+        width={42}
+        height={42} />
       Semantifai
     </Link>
   );

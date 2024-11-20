@@ -2,7 +2,6 @@ import * as React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 
 const Header = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
@@ -41,7 +40,7 @@ const HeaderNavContainer = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "fixed left-0 inset-y-0 ml-auto w-3/4 max-w-96 h-full px-5 py-20 border-r transition-transform ease-in-out duration-300 lg:static lg:flex lg:items-center lg:justify-between lg:w-auto lg:max-w-none lg:px-0 lg:py-0 lg:bg-transparent lg:border-r-0",
+      "fixed left-0 inset-y-20 ml-auto w-full flex flex-col justify-center px-5 py-10 h-fit border-r bg-zinc-900 opacity-95 transition-transform ease-in-out duration-300 lg:static lg:flex lg:items-center lg:justify-between lg:w-auto lg:max-w-none lg:px-0 lg:py-0 lg:bg-transparent lg:border-r-0",
       {
         "transform -translate-x-full lg:transform-none": !isOpen,
         "transform translate-x-0": isOpen,
