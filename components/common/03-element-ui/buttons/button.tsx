@@ -41,9 +41,9 @@ const buttonVariants = cva(
           "text-secondary-foreground relative bg-transparent border-2 border-primary z-0 overflow-hidden transition-all duration-500 after:absolute after:inset-0 after:-z-10 after:translate-x-[-150%] after:translate-y-[150%] after:scale-[2.5] after:rounded-[100%] after:bg-gradient-to-l from-zinc-400 after:transition-transform after:duration-1000  hover:after:translate-x-[0%] hover:after:translate-y-[0%] ",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        default: "h-10 px-4 py-2 rounded-xl",
+        sm: "h-9 rounded-lg px-3",
+        lg: "h-11 rounded-xl px-8",
         icon: "h-10 w-10",
       },
     },

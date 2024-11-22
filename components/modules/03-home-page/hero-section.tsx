@@ -1,17 +1,16 @@
+'use client'
 import { H1Heading } from "@/components/common/01-typography/h1-heading";
-
 import { Paragraph } from "@/components/common/01-typography/paragraph";
 import {
   Section,
   SectionTitleWrap,
 } from "@/components/common/02-page-ui/section";
-
-
 import { Button } from "@/components/common/03-element-ui/buttons/button";
-
+import { useRouter } from "next/navigation";
 
 
 export default function HeroSection() {
+  const router = useRouter();
   return (
     <Section className="relative bg-network4-bg bg-center bg-cover">
       <div className="absolute inset-0 bg-black opacity-70"></div>
@@ -24,7 +23,10 @@ export default function HeroSection() {
         <Paragraph className="max-w-xl">
         Let AI handle the heavy lifting for your business—safely, transparently, and compliantly. 
         </Paragraph>
-        <Button size='lg' variant='gooeyLeftTealTransparent' className="mt-5">Ask for more information</Button>
+        <Button size='lg' 
+                variant='gooeyLeftTealTransparent' 
+                className="mt-5"
+                onClick={()=> router.push('/contacts')}>Ask for more information</Button>
        
         
       </SectionTitleWrap>

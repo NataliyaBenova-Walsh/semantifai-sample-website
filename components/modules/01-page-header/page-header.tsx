@@ -47,13 +47,13 @@ export default function PageHeader() {
                 <HeaderNavLink href="/about">About us</HeaderNavLink>
               </HeaderNavItem>
               <HeaderNavItem>
-                <HeaderNavLink href="/contacs">Contacts</HeaderNavLink>
+                <HeaderNavLink href="/contacts">Contacts</HeaderNavLink>
               </HeaderNavItem>
             </HeaderNavList>
           </HeaderNavListWrap>
           <div className="relative z-20 flex flex-row gap-2.5 items-center justify-center">
           
-            <Button variant="gooeyLeftTransparent" asChild>
+            <Button variant="gooeyLeftTransparent"  asChild>
               <Link href="/" target="_blank" >
                 Get in Touch
               </Link>

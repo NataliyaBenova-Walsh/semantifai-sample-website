@@ -9,7 +9,7 @@ const Header = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(
     <header
       ref={ref}
       className={cn(
-        "fixed top-0 z-40 px-5 py-5 w-full lg:px-10 backdrop-blur-lg ",
+        "fixed top-0 z-40 px-5 py-5 w-full  backdrop-blur-lg ",
         className
       )}
       {...props}
@@ -40,7 +40,7 @@ const HeaderNavContainer = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "fixed left-0 inset-y-20 ml-auto w-full flex flex-col justify-center px-5 py-10 h-fit border-r bg-zinc-900 opacity-95 transition-transform ease-in-out duration-300 lg:static lg:flex lg:items-center lg:justify-between lg:w-auto lg:max-w-none lg:px-0 lg:py-0 lg:bg-transparent lg:border-r-0",
+      "fixed left-0 inset-y-20 ml-auto w-full px-5 py-10 h-fit border-r bg-zinc-900 opacity-95 transition-transform ease-in-out duration-300 lg:static lg:flex lg:items-center lg:justify-between lg:w-auto lg:max-w-none lg:px-0 lg:py-0 lg:bg-transparent lg:border-r-0",
       {
         "transform -translate-x-full lg:transform-none": !isOpen,
         "transform translate-x-0": isOpen,
@@ -96,7 +96,7 @@ const HeaderNavLink = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <Link
     ref={ref}
-    className={cn("flex px-5 py-2.5 text-md font-medium ", className)}
+    className={cn("flex px-5 py-2.5 text-md font-semibold ", className)}
     {...props}
   />
 ));

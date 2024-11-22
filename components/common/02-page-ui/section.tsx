@@ -53,7 +53,7 @@ const sectionTitleWrapVariants = cva(
     variants: {
       variant: {
         default: "mt-12 p-10",
-        hero: "mt-32 p-10",
+        hero: "mt-32 p-20",
       },
       layout: {
         default: "",

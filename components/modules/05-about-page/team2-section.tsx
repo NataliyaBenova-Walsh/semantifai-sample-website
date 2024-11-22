@@ -79,7 +79,7 @@ export default function TeamSection2 () {
       <div className="relative w-full ">
       <SectionTitleWrap>
         <H2Heading className='text-center my-10'>Our team</H2Heading>
-
+        </SectionTitleWrap>
         <div className='flex gap-10 justify-start flex-wrap'>
           {teamMembers.map((member, index) => (
             <div key={index}
@@ -111,7 +111,7 @@ export default function TeamSection2 () {
           ))}
         </div>
 
-        </SectionTitleWrap>
+      
       </div>
     </Section>
     )

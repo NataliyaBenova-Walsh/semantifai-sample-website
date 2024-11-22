@@ -4,6 +4,9 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
+import LOGO7NOBG from '../../../../app/assets/LOGO7NOBG.png';
+
+
 function Logo({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
   return (
     <Link
@@ -16,11 +19,11 @@ function Logo({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
       {...props}
     >
       <Image className="rounded-full"
-        src={LogoSemantifai}
+        src={LOGO7NOBG}
         alt="Logo Semantifai"
-        width={42}
-        height={42} />
-      Semantifai
+        width={280}
+        height={100} />
+     
     </Link>
   );
 }
