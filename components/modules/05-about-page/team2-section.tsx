@@ -4,6 +4,8 @@ import trifonBW from '../../../app/assets/trifonBW.webp';
 import nataliyaBW from '../../../app/assets/nataliyaBW.webp';
 import yankoBW from '../../../app/assets/yankoBW.webp';
 import beardManBW from '../../../app/assets/beardManBW.jpg';
+import bobiBW from '../../../app/assets/bobiBW.webp';
+import EmoBW from '../../../app/assets/EmoBW.webp';
 import Image from 'next/image';
 import { Section, SectionTitleWrap} from "@/components/common/02-page-ui/section";
   import { H3Heading } from "@/components/common/01-typography/h3-heading";
@@ -23,16 +25,16 @@ export default function TeamSection2 () {
             name: 'Emiliyan',
             lastName: 'Enev',
             title: 'Business Development',
-            image: beardManBW,
+            image: EmoBW,
             desc: 'Been there and done that, a digital entrepreneur with multiple awards, Techstars alumnus, TEDx speaker, projects for UniCredit, Dutch government, European Commission, co-founder and member of the first board of the Bulgarian startup association (BESCO).',
            link: 'https://www.linkedin.com/in/eenev/'
         },
         {
             name: 'Ivan',
             lastName: 'Tsvetanov',
-            title: 'AI Developer',
+            title: 'Co-founder & AI Product Engineer',
             image: beardManBW,
-            desc: 'Lorem ipsum dolor sit',
+            desc: 'Specializing in AI solutions. With a solid background in Python, JavaScript, and other technologies, he focuses on designing and building innovative AI products that meet the needs of our clients. Passionate about creating practical, cutting-edge solutions that help businesses and government institutions thrive in the digital age.',
              link: 'https://www.linkedin.com/in/ivan-tsvetanov-30ba792a9/'
         },
         {
@@ -67,6 +69,14 @@ export default function TeamSection2 () {
             desc: 'Full Stack developer Python/React.JS and Naval Architect/Ship Hull design engineer - (Master`s degree). Passionate about technology with an neverending thirst for knowledge. A blend of developer and engineer, offering a unique perspective from both worlds.',
            link: 'https://www.linkedin.com/in/yanko-rashkov/'
         },
+        {
+          name: 'Boris',
+          lastName: 'Trifonov',
+          title: 'Developer',
+          image: bobiBW,
+          desc: 'Lorem ipsum dolor sit',
+         link: 'https://www.linkedin.com/'
+      },
 
     ]
 
@@ -99,10 +109,10 @@ export default function TeamSection2 () {
               </div>
               <div className='flex gap-1'>
                 <Link href={member.link} target='blank'><Linkedin className='text-teal-300'/></Link>
-                <div className='flex-1 bg-zinc-900 p-2'>
+                <div className='flex-1 flex flex-col bg-zinc-900 p-2'>
                   <H3Heading size='sm'>{member.name} </H3Heading>
                   <H3Heading size='sm'>{member.lastName} </H3Heading>
-                  <Paragraph >{member.title}</Paragraph>
+                  <Paragraph className='flex-1'>{member.title}</Paragraph>
                 </div>
               </div>
 

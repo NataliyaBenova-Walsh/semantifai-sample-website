@@ -54,7 +54,7 @@ export default function PageHeader() {
           <div className="relative z-20 flex flex-row gap-2.5 items-center justify-center">
           
             <Button variant="gooeyLeftTransparent"  asChild>
-              <Link href="/" target="_blank" >
+              <Link href="/contacts"  >
                 Get in Touch
               </Link>
             </Button>
