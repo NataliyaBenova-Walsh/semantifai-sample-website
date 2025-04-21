@@ -109,10 +109,10 @@ export default function TeamSection2 () {
               </div>
               <div className='flex gap-1'>
                 <Link href={member.link} target='blank'><Linkedin className='text-teal-300'/></Link>
-                <div className='flex-1 flex flex-col bg-zinc-900 p-2'>
+                <div className='flex-1 bg-zinc-900 p-2'>
                   <H3Heading size='sm'>{member.name} </H3Heading>
                   <H3Heading size='sm'>{member.lastName} </H3Heading>
-                  <Paragraph className='flex-1'>{member.title}</Paragraph>
+                  <Paragraph className=''>{member.title}</Paragraph>
                 </div>
               </div>
 
